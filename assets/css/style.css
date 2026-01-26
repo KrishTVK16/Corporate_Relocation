@@ -1,0 +1,295 @@
+:root {
+    /* Color Palette */
+    --primary-color: #0F172A;
+    /* Corporate Navy */
+    --secondary-color: #334155;
+    /* Steel Blue */
+    --accent-color: #E27A1D;
+    /* Action Orange */
+
+    --bg-light: #F8FAFC;
+    --bg-white: #FFFFFF;
+    --text-main: #1E293B;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+
+    /* Dark Mode Overrides */
+    --mode-bg: var(--bg-light);
+    --mode-card-bg: var(--bg-white);
+    --mode-text: var(--text-main);
+}
+
+[data-bs-theme="dark"] {
+    --primary-color: #3B82F6;
+    /* Brighter blue for dark mode contrast if needed, or keep same */
+    --mode-bg: #0F172A;
+    --mode-card-bg: #1E293B;
+    --mode-text: #F1F5F9;
+    --text-muted: #94A3B8;
+    --border-color: #334155;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--mode-bg);
+    color: var(--mode-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+/* Utilities */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-accent {
+    background-color: var(--accent-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #0b1120;
+    /* Darker navy */
+    border-color: #0b1120;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn-accent:hover {
+    background-color: #c56a19;
+    border-color: #c56a19;
+    color: #fff;
+}
+
+/* Card Styling */
+.card {
+    background-color: var(--mode-card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Header & Nav */
+.navbar {
+    background-color: var(--mode-card-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--mode-text);
+    font-weight: 500;
+}
+
+/* Timeline Component */
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: var(--border-color);
+}
+
+.timeline>li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+
+.timeline>li:after,
+.timeline>li:before {
+    display: table;
+    content: " ";
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid var(--border-color);
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+/* Page Headers */
+.page-header {
+    background-color: var(--mode-bg);
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Service Card Hover */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Operations Hub Styles */
+.hub-header {
+    background-color: var(--primary-color);
+    padding: 0.75rem 0;
+}
+
+.hub-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.hub-subnav {
+    background-color: var(--mode-card-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.hub-nav-link {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.hub-nav-link:hover,
+.hub-nav-link.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--accent-color);
+}
+
+.app-card {
+    background-color: var(--mode-card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    height: 100%;
+}
+
+.app-card-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-card-body {
+    padding: 1rem;
+}
+
+/* Kanban Board */
+.kanban-col {
+    background-color: var(--mode-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-height: 500px;
+}
+
+.kanban-card {
+    background-color: var(--mode-card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: grab;
+}
+
+.kanban-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Status Badges */
+.status-badge {
+    font-size: 0.75rem;
+    padding: 0.25em 0.6em;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.status-new {
+    background-color: #E0F2FE;
+    color: #0369A1;
+}
+
+.status-progress {
+    background-color: #FEF3C7;
+    color: #B45309;
+}
+
+.status-done {
+    background-color: #DCFCE7;
+    color: #15803D;
+}
