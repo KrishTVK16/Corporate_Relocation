@@ -9,216 +9,260 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F172A'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='%23E27A1D' font-family='Arial, sans-serif' font-weight='bold' font-size='20'>X</text></svg>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="bg-light">
 
-    <!-- Hub Header -->
-    <header class="hub-header sticky-top">
-        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center gap-4">
-                <a class="hub-brand" href="../index.html">
-                    Relocate<span class="text-accent">X</span> <span class="opacity-50 fw-light">| Hub</span>
-                </a>
-                <div class="d-none d-md-block">
-                    <input type="text"
-                        class="form-control form-control-sm bg-white bg-opacity-10 border-0 text-white placeholder-white"
-                        placeholder="Search cases, people..." style="width: 250px;">
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar" id="sidebar">
+            <a class="sidebar-logo" href="../index.html">
+                <span class="text-primary fw-bold fs-4">Relocate</span><span class="text-accent fw-bold fs-4">X</span>
+            </a>
+            <nav class="sidebar-nav">
+                <a href="overview.html" class="sidebar-link active"><i class="bi bi-grid-fill"></i> Overview</a>
+                <a href="cases.html" class="sidebar-link"><i class="bi bi-briefcase-fill"></i> Cases</a>
+                <a href="people.html" class="sidebar-link"><i class="bi bi-people-fill"></i> People</a>
+                <a href="documents.html" class="sidebar-link"><i class="bi bi-file-earmark-text-fill"></i> Documents</a>
+                <a href="insights.html" class="sidebar-link"><i class="bi bi-bar-chart-line-fill"></i> Insights</a>
+                <a href="messages.html" class="sidebar-link"><i class="bi bi-chat-dots-fill"></i> Messages</a>
+                <a href="settings.html" class="sidebar-link"><i class="bi bi-gear-fill"></i> Settings</a>
+
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-main">
+            <header class="dashboard-header shadow-sm">
+                <!-- Desktop: Title left, controls right -->
+                <div class="d-flex align-items-center">
+                    <h1 class="h5 fw-bold mb-0 d-none d-lg-block">Operations Hub</h1>
                 </div>
-            </div>
-            <div class="d-flex align-items-center gap-3">
-                <button class="btn btn-sm btn-link text-white text-decoration-none position-relative">
-                    <i class="bi bi-bell fs-5"></i>
-                    <span
-                        class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
-                </button>
-                <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown">
-                        <img src="https://placehold.co/32x32" class="rounded-circle me-2" alt="User">
-                        <span class="d-none d-sm-inline">Admin User</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="settings.html">Settings</a></li>
-                        <li><a class="dropdown-item" href="../login.html">Logout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Context Nav -->
-    <nav class="hub-subnav sticky-top" style="top: 56px; z-index: 1020;">
-        <div class="container-fluid px-4">
-            <a href="overview.html" class="hub-nav-link active">Overview</a>
-            <a href="cases.html" class="hub-nav-link">Cases</a>
-            <a href="people.html" class="hub-nav-link">People</a>
-            <a href="documents.html" class="hub-nav-link">Documents</a>
-            <a href="insights.html" class="hub-nav-link">Insights</a>
-            <a href="messages.html" class="hub-nav-link">Messages</a>
-            <a href="settings.html" class="hub-nav-link">Settings</a>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container-fluid px-4 py-4">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="h4 fw-bold mb-0">Dashboard Overview</h2>
-            <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-download me-1"></i> Export</button>
-                <button class="btn btn-sm btn-primary"><i class="bi bi-plus-lg me-1"></i> New Case</button>
-            </div>
-        </div>
-
-        <!-- Stats Cards -->
-        <div class="row g-3 mb-4">
-            <div class="col-md-3">
-                <div class="app-card p-3">
-                    <div class="d-flex justify-content-between align-items-start">
+                <!-- Desktop Controls (visible on lg+) -->
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <button class="btn btn-sm btn-outline-secondary rounded-circle theme-toggle" type="button">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <div class="user-profile border-start ps-3">
+                        <div class="user-avatar text-white">JD</div>
                         <div>
-                            <p class="text-muted small mb-1">Active Cases</p>
-                            <h3 class="fw-bold mb-0">24</h3>
+                            <div class="fw-bold small">John Doe</div>
+                            <div class="text-muted" style="font-size: 0.75rem;">Account Manager</div>
                         </div>
-                        <span class="badge bg-success bg-opacity-10 text-success">+12%</span>
                     </div>
+                    <button class="btn btn-sm btn-outline-danger ms-2" onclick="window.location.href='../index.html'">
+                        <i class="bi bi-box-arrow-right me-1"></i>Logout
+                    </button>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="app-card p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <div>
-                            <p class="text-muted small mb-1">Pending Actions</p>
-                            <h3 class="fw-bold mb-0">8</h3>
-                        </div>
-                        <span class="badge bg-warning bg-opacity-10 text-warning">Needs Attention</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="app-card p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <div>
-                            <p class="text-muted small mb-1">Documents</p>
-                            <h3 class="fw-bold mb-0">156</h3>
-                        </div>
-                        <span class="text-muted small"><i class="bi bi-file-earmark-text"></i> Files</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="app-card p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <div>
-                            <p class="text-muted small mb-1">Revenue (MTD)</p>
-                            <h3 class="fw-bold mb-0">$48.2k</h3>
-                        </div>
-                        <span class="badge bg-success bg-opacity-10 text-success">+5.4%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row g-4">
-            <!-- Recent Activity -->
-            <div class="col-lg-8">
-                <div class="app-card">
-                    <div class="app-card-header">
-                        <h5 class="mb-0 fw-bold fs-6">Recent Case Activity</h5>
-                        <a href="cases.html" class="text-decoration-none small">View All</a>
-                    </div>
-                    <div class="app-card-body p-0">
-                        <div class="table-responsive">
-                            <table class="table table-hover align-middle mb-0">
-                                <thead class="bg-light">
-                                    <tr>
-                                        <th class="ps-3">Case ID</th>
-                                        <th>Client</th>
-                                        <th>Service</th>
-                                        <th>Status</th>
-                                        <th>Date</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="ps-3"><a href="#" class="fw-bold text-decoration-none">#CASE-204</a>
-                                        </td>
-                                        <td>Acme Corp - HQ Move</td>
-                                        <td>Office Relocation</td>
-                                        <td><span class="status-badge status-progress">In Progress</span></td>
-                                        <td class="text-muted small">Oct 24, 2025</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-3"><a href="#" class="fw-bold text-decoration-none">#CASE-199</a>
-                                        </td>
-                                        <td>Globex Inc.</td>
-                                        <td>Employee Mobility</td>
-                                        <td><span class="status-badge status-new">New Request</span></td>
-                                        <td class="text-muted small">Oct 22, 2025</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-3"><a href="#" class="fw-bold text-decoration-none">#CASE-180</a>
-                                        </td>
-                                        <td>Stark Ind.</td>
-                                        <td>Logistics</td>
-                                        <td><span class="status-badge status-done">Completed</span></td>
-                                        <td class="text-muted small">Oct 20, 2025</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-3"><a href="#" class="fw-bold text-decoration-none">#CASE-205</a>
-                                        </td>
-                                        <td>Wayne Enterprises</td>
-                                        <td>IT Setup</td>
-                                        <td><span class="status-badge status-progress">Scheduling</span></td>
-                                        <td class="text-muted small">Today</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                <!-- Mobile: Title left, hamburger right -->
+                <div class="d-flex d-lg-none align-items-center w-100 justify-content-between">
+                    <a href="../index.html" class="text-decoration-none fw-bold d-flex align-items-center gap-1"
+                        style="font-size:1.05rem;"><span class="text-primary">Relocate</span><span
+                            style="color:var(--accent-color)">X</span></a>
+                    <button class="btn btn-sm" id="hub-mobile-toggle" aria-label="Menu">
+                        <i class="bi bi-list fs-4"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Dropdown Panel -->
+                <div class="hub-mobile-menu" id="hub-mobile-menu">
+                    <div class="hub-menu-divider mb-1"></div>
+                    <a href="overview.html" class="hub-menu-btn active" style="text-decoration:none;"><i
+                            class="bi bi-grid-fill"></i> Overview</a>
+                    <a href="cases.html" class="hub-menu-btn" style="text-decoration:none;"><i
+                            class="bi bi-briefcase-fill"></i> Cases</a>
+                    <a href="people.html" class="hub-menu-btn" style="text-decoration:none;"><i
+                            class="bi bi-people-fill"></i> People</a>
+                    <a href="documents.html" class="hub-menu-btn" style="text-decoration:none;"><i
+                            class="bi bi-file-earmark-text-fill"></i> Documents</a>
+                    <a href="insights.html" class="hub-menu-btn" style="text-decoration:none;"><i
+                            class="bi bi-bar-chart-line-fill"></i> Insights</a>
+                    <a href="messages.html" class="hub-menu-btn" style="text-decoration:none;"><i
+                            class="bi bi-chat-dots-fill"></i> Messages</a>
+                    <a href="settings.html" class="hub-menu-btn" style="text-decoration:none;"><i
+                            class="bi bi-gear-fill"></i> Settings</a>
+                    <div class="hub-menu-divider"></div>
+                    <button class="hub-menu-btn theme-toggle">
+                        <i class="bi bi-moon-stars"></i> Toggle Theme
+                    </button>
+                    <div class="hub-menu-divider"></div>
+                    <button class="hub-menu-btn logout" onclick="window.location.href='../index.html'">
+                        <i class="bi bi-box-arrow-right"></i> Logout
+                    </button>
+                </div>
+            </header>
+
+            <main class="p-4">
+                <div
+                    class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-lg-between gap-2 mb-4" hub-page-title">
+                    <h2 class="h4 fw-bold mb-0">Dashboard Overview</h2>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-download me-1"></i>
+                            Export</button>
+                        <button class="btn btn-sm btn-primary"><i class="bi bi-plus-lg me-1"></i> New Case</button>
                     </div>
                 </div>
-            </div>
 
-            <!-- Tasks / Notifications -->
-            <div class="col-lg-4">
-                <div class="app-card">
-                    <div class="app-card-header">
-                        <h5 class="mb-0 fw-bold fs-6">My Tasks</h5>
-                        <button class="btn btn-sm btn-light"><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="app-card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item px-0 d-flex gap-3 align-items-center border-0">
-                                <input class="form-check-input flex-shrink-0" type="checkbox">
+                <!-- Stats Cards -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-3">
+                        <div class="app-card p-3">
+                            <div class="d-flex justify-content-between align-items-start">
                                 <div>
-                                    <div class="fw-medium">Review contract for Case #204</div>
-                                    <small class="text-muted">Due Today</small>
+                                    <p class="text-muted small mb-1">Active Cases</p>
+                                    <h3 class="fw-bold mb-0">24</h3>
                                 </div>
-                            </li>
-                            <li class="list-group-item px-0 d-flex gap-3 align-items-center border-0">
-                                <input class="form-check-input flex-shrink-0" type="checkbox">
+                                <span class="badge bg-success bg-opacity-10 text-success">+12%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="app-card p-3">
+                            <div class="d-flex justify-content-between align-items-start">
                                 <div>
-                                    <div class="fw-medium">Approve invoice #INV-8821</div>
-                                    <small class="text-muted">Due Tomorrow</small>
+                                    <p class="text-muted small mb-1">Pending Actions</p>
+                                    <h3 class="fw-bold mb-0">8</h3>
                                 </div>
-                            </li>
-                            <li class="list-group-item px-0 d-flex gap-3 align-items-center border-0">
-                                <input class="form-check-input flex-shrink-0" type="checkbox">
+                                <span class="badge bg-warning bg-opacity-10 text-warning">Needs Attention</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="app-card p-3">
+                            <div class="d-flex justify-content-between align-items-start">
                                 <div>
-                                    <div class="fw-medium">Schedule kickoff with Globex</div>
-                                    <small class="text-muted">Oct 26</small>
+                                    <p class="text-muted small mb-1">Documents</p>
+                                    <h3 class="fw-bold mb-0">156</h3>
                                 </div>
-                            </li>
-                        </ul>
+                                <span class="text-muted small"><i class="bi bi-file-earmark-text"></i> Files</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="app-card p-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <p class="text-muted small mb-1">Revenue (MTD)</p>
+                                    <h3 class="fw-bold mb-0">$48.2k</h3>
+                                </div>
+                                <span class="badge bg-success bg-opacity-10 text-success">+5.4%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="row g-4">
+                    <!-- Recent Activity -->
+                    <div class="col-lg-8">
+                        <div class="app-card">
+                            <div class="app-card-header">
+                                <h5 class="mb-0 fw-bold fs-6">Recent Case Activity</h5>
+                                <a href="cases.html" class="text-decoration-none small">View All</a>
+                            </div>
+                            <div class="app-card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle mb-0">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th class="ps-3">Case ID</th>
+                                                <th>Client</th>
+                                                <th>Service</th>
+                                                <th>Status</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="ps-3"><a href="#"
+                                                        class="fw-bold text-decoration-none">#CASE-204</a>
+                                                </td>
+                                                <td>Acme Corp - HQ Move</td>
+                                                <td>Office Relocation</td>
+                                                <td><span class="status-badge status-progress">In Progress</span></td>
+                                                <td class="text-muted small">Oct 24, 2025</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ps-3"><a href="#"
+                                                        class="fw-bold text-decoration-none">#CASE-199</a>
+                                                </td>
+                                                <td>Globex Inc.</td>
+                                                <td>Employee Mobility</td>
+                                                <td><span class="status-badge status-new">New Request</span></td>
+                                                <td class="text-muted small">Oct 22, 2025</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ps-3"><a href="#"
+                                                        class="fw-bold text-decoration-none">#CASE-180</a>
+                                                </td>
+                                                <td>Stark Ind.</td>
+                                                <td>Logistics</td>
+                                                <td><span class="status-badge status-done">Completed</span></td>
+                                                <td class="text-muted small">Oct 20, 2025</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ps-3"><a href="#"
+                                                        class="fw-bold text-decoration-none">#CASE-205</a>
+                                                </td>
+                                                <td>Wayne Enterprises</td>
+                                                <td>IT Setup</td>
+                                                <td><span class="status-badge status-progress">Scheduling</span></td>
+                                                <td class="text-muted small">Today</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tasks / Notifications -->
+                    <div class="col-lg-4">
+                        <div class="app-card">
+                            <div class="app-card-header">
+                                <h5 class="mb-0 fw-bold fs-6">My Tasks</h5>
+                                <button class="btn btn-sm btn-light"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <div class="app-card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0 d-flex gap-3 align-items-center border-0">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox">
+                                        <div>
+                                            <div class="fw-medium">Review contract for Case #204</div>
+                                            <small class="text-muted">Due Today</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0 d-flex gap-3 align-items-center border-0">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox">
+                                        <div>
+                                            <div class="fw-medium">Approve invoice #INV-8821</div>
+                                            <small class="text-muted">Due Tomorrow</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0 d-flex gap-3 align-items-center border-0">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox">
+                                        <div>
+                                            <div class="fw-medium">Schedule kickoff with Globex</div>
+                                            <small class="text-muted">Oct 26</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-    </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
+
