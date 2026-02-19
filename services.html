@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - RelocateX</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F172A'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='%23E27A1D' font-family='Arial, sans-serif' font-weight='bold' font-size='20'>X</text></svg>">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
@@ -21,24 +23,35 @@
             <a class="navbar-brand fw-bold fs-4" href="index.html">
                 <span class="text-primary">Relocate</span><span class="text-accent">X</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 ms-auto d-lg-none">
+                <button class="btn btn-sm btn-outline-secondary rounded-circle theme-toggle" type="button">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="operations/overview.html">Hub</a></li>
                 </ul>
-                <div class="d-flex gap-2 align-items-center">
-                    <button class="btn btn-sm btn-outline-secondary rounded-circle" id="theme-toggle">
+                <div class="d-flex flex-column flex-lg-row gap-2 align-items-center mt-3 mt-lg-0" style="float: right"
+                    ;>
+                    <button
+                        class="btn btn-sm btn-outline-secondary desktop-only rounded-circle theme-toggle d-none d-lg-inline-flex me-lg-2"
+                        type="button">
                         <i class="bi bi-moon-stars"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
-                    <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-primary px-4 w-75 w-lg-auto nav-auth-btn">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4 w-75 w-lg-auto nav-auth-btn">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -53,20 +66,21 @@
     </header>
 
     <!-- Services Grid -->
-    <section class="py-5">
+    <section class="py-5 text-center">
         <div class="container py-5">
             <div class="row g-4">
                 <!-- Service 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Office+Relocation" class="card-img-top"
-                            alt="Service">
-                        <div class="card-body p-4">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.Mo1ckRtydtUOemPP5BzZ3AHaE8?pid=Api&P=0&h=180"
+                            class="card-img-top service-img" alt="Service">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="fs-2 text-accent mb-3"><i class="bi bi-building"></i></div>
                             <h4 class="card-title fw-bold">Office Relocation</h4>
                             <p class="card-text text-muted">Complete office moving services minimizing downtime and
                                 ensuring business continuity.</p>
-                            <a href="service-details.html" class="btn btn-link px-0 text-decoration-none fw-bold">Read
+                            <a href="service-details.html"
+                                class="btn btn-link px-0 text-decoration-none fw-bold mt-auto text-start">Read
                                 More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -74,14 +88,15 @@
                 <!-- Service 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Employee+Mobility" class="card-img-top"
-                            alt="Service">
-                        <div class="card-body p-4">
+                        <img src="https://nrirelocation.com/wp-content/uploads/2023/05/shutterstock_2204026951-scaled.jpg"
+                            class="card-img-top service-img" alt="Service">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="fs-2 text-accent mb-3"><i class="bi bi-people"></i></div>
                             <h4 class="card-title fw-bold">Employee Mobility</h4>
                             <p class="card-text text-muted">Assisting your staff with housing, visa, and settlement in
                                 their new location.</p>
-                            <a href="service-details.html" class="btn btn-link px-0 text-decoration-none fw-bold">Read
+                            <a href="service-details.html"
+                                class="btn btn-link px-0 text-decoration-none fw-bold mt-auto text-start">Read
                                 More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -89,14 +104,15 @@
                 <!-- Service 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=IT+Infrastructure" class="card-img-top"
-                            alt="Service">
-                        <div class="card-body p-4">
+                        <img src="https://assets-us-01.kc-usercontent.com/4238bbb7-dd7f-00c8-356d-23a4cbd5cdfb/4070d2ab-167d-4e49-94b0-4acbf6e03f59/corporate-relocation-blog.jpeg"
+                            class="card-img-top service-img" alt="Service">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="fs-2 text-accent mb-3"><i class="bi bi-hdd-network"></i></div>
                             <h4 class="card-title fw-bold">IT Infrastructure</h4>
                             <p class="card-text text-muted">Server migration, network setup, and workstation
                                 configuration.</p>
-                            <a href="service-details.html" class="btn btn-link px-0 text-decoration-none fw-bold">Read
+                            <a href="service-details.html"
+                                class="btn btn-link px-0 text-decoration-none fw-bold mt-auto text-start">Read
                                 More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -104,13 +120,15 @@
                 <!-- Service 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Warehousing" class="card-img-top" alt="Service">
-                        <div class="card-body p-4">
+                        <img src="https://www.acerelocation.com/wp-content/uploads/2022/07/ACE_Headers-Storage.jpg"
+                            class="card-img-top service-img" alt="Service">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="fs-2 text-accent mb-3"><i class="bi bi-box-seam"></i></div>
                             <h4 class="card-title fw-bold">Warehousing</h4>
                             <p class="card-text text-muted">Secure, climate-controlled storage solutions for short or
                                 long-term needs.</p>
-                            <a href="service-details.html" class="btn btn-link px-0 text-decoration-none fw-bold">Read
+                            <a href="service-details.html"
+                                class="btn btn-link px-0 text-decoration-none fw-bold mt-auto text-start">Read
                                 More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -118,13 +136,15 @@
                 <!-- Service 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Logistics" class="card-img-top" alt="Service">
-                        <div class="card-body p-4">
+                        <img src="https://www.imove.com/wp-content/uploads/TEMP_service_full_service_move-1600x1068.jpg"
+                            class="card-img-top service-img" alt="Service">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="fs-2 text-accent mb-3"><i class="bi bi-truck"></i></div>
                             <h4 class="card-title fw-bold">Global Logistics</h4>
                             <p class="card-text text-muted">Freight forwarding, customs clearance, and supply chain
                                 management.</p>
-                            <a href="service-details.html" class="btn btn-link px-0 text-decoration-none fw-bold">Read
+                            <a href="service-details.html"
+                                class="btn btn-link px-0 text-decoration-none fw-bold mt-auto text-start">Read
                                 More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -132,13 +152,15 @@
                 <!-- Service 6 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Consulting" class="card-img-top" alt="Service">
-                        <div class="card-body p-4">
+                        <img src="https://arcrelocation.com/wp-content/uploads/2021/07/Relocation-Consultants-768x512.jpg"
+                            class="card-img-top service-img" alt="Service">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="fs-2 text-accent mb-3"><i class="bi bi-clipboard-data"></i></div>
                             <h4 class="card-title fw-bold">Relocation Consulting</h4>
                             <p class="card-text text-muted">Strategic planning and cost analysis for major corporate
                                 moves.</p>
-                            <a href="service-details.html" class="btn btn-link px-0 text-decoration-none fw-bold">Read
+                            <a href="service-details.html"
+                                class="btn btn-link px-0 text-decoration-none fw-bold mt-auto text-start">Read
                                 More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -148,42 +170,64 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
+    <footer class="bg-light border-top py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold fs-4 text-white" href="#">
-                        Relocate<span class="text-accent">X</span>
+                <div class="col-lg-3">
+                    <a class="navbar-brand fw-bold fs-4" href="index.html">
+                        <span class="text-primary">Relocate</span><span class="text-accent">X</span>
                     </a>
                     <p class="text-muted mt-3">Your trusted partner for corporate relocation and global mobility
                         services.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Company</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="about.html" class="mode-text text-decoration-none hover-primary">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="services.html"
+                                class="mode-text text-decoration-none hover-primary">Our
+                                Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="mode-text text-decoration-none hover-primary">Latest
+                                Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="mode-text text-decoration-none hover-primary">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Services</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Support</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Moving</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Storage</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Logistics</a></li>
+                        <li class="mb-2"><a href="index.html#pricing"
+                                class="mode-text text-decoration-none hover-primary">Pricing
+                                Plans</a></li>
+                        <li class="mb-2"><a href="index.html#faq"
+                                class="mode-text text-decoration-none hover-primary">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">Newsletter</h5>
-                    <form class="d-flex gap-2">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <button class="btn btn-primary">Subscribe</button>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Newsletter</h5>
+                    <p class="text-muted small mb-3">Subscribe to get the latest corporate relocation insights.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="border-top border-secondary mt-5 pt-4 text-center text-muted">
-                <p class="mb-0">&copy; 2026 RelocateX. All rights reserved.</p>
+            <div class="border-top mt-5 pt-4 text-center text-muted">
+                <p class="mb-0 small">&copy; 2026 RelocateX. All rights reserved.</p>
             </div>
         </div>
     </footer>

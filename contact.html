@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - RelocateX</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F172A'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='%23E27A1D' font-family='Arial, sans-serif' font-weight='bold' font-size='20'>X</text></svg>">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
@@ -21,24 +23,35 @@
             <a class="navbar-brand fw-bold fs-4" href="index.html">
                 <span class="text-primary">Relocate</span><span class="text-accent">X</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 ms-auto d-lg-none">
+                <button class="btn btn-sm btn-outline-secondary rounded-circle theme-toggle" type="button">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="operations/overview.html">Hub</a></li>
                 </ul>
-                <div class="d-flex gap-2 align-items-center">
-                    <button class="btn btn-sm btn-outline-secondary rounded-circle" id="theme-toggle">
+                <div class="d-flex flex-column flex-lg-row gap-2 align-items-center mt-3 mt-lg-0" style="float: right"
+                    ;>
+                    <button
+                        class="btn btn-sm btn-outline-secondary desktop-only rounded-circle theme-toggle d-none d-lg-inline-flex me-lg-2"
+                        type="button">
                         <i class="bi bi-moon-stars"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
-                    <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-primary px-4 w-75 w-lg-auto nav-auth-btn">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4 w-75 w-lg-auto nav-auth-btn">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -60,7 +73,7 @@
                 <div class="col-lg-6">
                     <div class="card border-0 shadow-sm">
                         <div class="card-body p-5">
-                            <h3 class="fw-bold mb-4">Send us a Message</h3>
+                            <h3 class="fw-bold mb-4 text-center">Send us a Message</h3>
                             <form>
                                 <div class="row g-3 mb-3">
                                     <div class="col-md-6">
@@ -119,14 +132,23 @@
                             <div>
                                 <h5 class="fw-bold mb-1">Call Us</h5>
                                 <p class="text-muted mb-0">+1 (555) 123-4567<br>Mon-Fri, 9am - 6pm EST</p>
+                                <div class="d-flex gap-3 mt-3">
+                                    <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="text-primary fs-5 social-icon"><i
+                                            class="bi bi-twitter-x"></i></a>
+                                    <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Map Placeholder -->
-                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 300px; background-color: #eee;">
-                        <img src="https://placehold.co/800x400?text=Map+Location" class="w-100 h-100 object-fit-cover"
-                            alt="Map">
+                    <!-- Interactive Map -->
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 300px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976373946229!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1708328464321!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -134,42 +156,64 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
+    <footer class="bg-light border-top py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold fs-4 text-white" href="#">
-                        Relocate<span class="text-accent">X</span>
+                <div class="col-lg-3">
+                    <a class="navbar-brand fw-bold fs-4" href="index.html">
+                        <span class="text-primary">Relocate</span><span class="text-accent">X</span>
                     </a>
                     <p class="text-muted mt-3">Your trusted partner for corporate relocation and global mobility
                         services.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Company</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="about.html" class="mode-text text-decoration-none hover-primary">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="services.html"
+                                class="mode-text text-decoration-none hover-primary">Our
+                                Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="mode-text text-decoration-none hover-primary">Latest
+                                Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="mode-text text-decoration-none hover-primary">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Services</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Support</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Moving</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Storage</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Logistics</a></li>
+                        <li class="mb-2"><a href="index.html#pricing"
+                                class="mode-text text-decoration-none hover-primary">Pricing
+                                Plans</a></li>
+                        <li class="mb-2"><a href="index.html#faq"
+                                class="mode-text text-decoration-none hover-primary">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">Newsletter</h5>
-                    <form class="d-flex gap-2">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <button class="btn btn-primary">Subscribe</button>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Newsletter</h5>
+                    <p class="text-muted small mb-3">Subscribe to get the latest corporate relocation insights.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="border-top border-secondary mt-5 pt-4 text-center text-muted">
-                <p class="mb-0">&copy; 2026 RelocateX. All rights reserved.</p>
+            <div class="border-top mt-5 pt-4 text-center text-muted">
+                <p class="mb-0 small">&copy; 2026 RelocateX. All rights reserved.</p>
             </div>
         </div>
     </footer>

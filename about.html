@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - RelocateX</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F172A'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='%23E27A1D' font-family='Arial, sans-serif' font-weight='bold' font-size='20'>X</text></svg>">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
@@ -21,24 +23,35 @@
             <a class="navbar-brand fw-bold fs-4" href="index.html">
                 <span class="text-primary">Relocate</span><span class="text-accent">X</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 ms-auto d-lg-none">
+                <button class="btn btn-sm btn-outline-secondary rounded-circle theme-toggle" type="button">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="operations/overview.html">Hub</a></li>
                 </ul>
-                <div class="d-flex gap-2 align-items-center">
-                    <button class="btn btn-sm btn-outline-secondary rounded-circle" id="theme-toggle">
+                <div class="d-flex flex-column flex-lg-row gap-2 align-items-center mt-3 mt-lg-0" style="float: right"
+                    ;>
+                    <button
+                        class="btn btn-sm btn-outline-secondary desktop-only rounded-circle theme-toggle d-none d-lg-inline-flex me-lg-2"
+                        type="button">
                         <i class="bi bi-moon-stars"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
-                    <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-primary px-4 w-75 w-lg-auto nav-auth-btn">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4 w-75 w-lg-auto nav-auth-btn">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -55,20 +68,119 @@
     <!-- Story Section -->
     <section class="py-5">
         <div class="container py-5">
-            <div class="row align-items-center g-5">
+            <div class="row align-items-center g-5 text-center text-lg-start">
                 <div class="col-lg-6">
-                    <img src="https://placehold.co/600x400?text=Our+Team" alt="Team"
-                        class="img-fluid rounded-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                        alt="RelocateX Team" class="img-fluid rounded-4 shadow-sm">
                 </div>
                 <div class="col-lg-6">
-                    <span class="text-accent fw-bold text-uppercase ls-1">Our Story</span>
-                    <h2 class="display-5 fw-bold mb-4">We Make Relocation Simple</h2>
-                    <p class="text-muted mb-4">RelocateX was founded with a single mission: to remove the friction from
-                        corporate mobility. We understand that moving a business isn't just about boxes—it's about
-                        people, continuity, and growth.</p>
-                    <p class="text-muted mb-4">With a network spanning over 50 countries, we combine local expertise
-                        with global standards to deliver seamless transitions for companies of all sizes.</p>
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <div class="text-center text-lg-start">
+                        <span class="text-accent fw-bold text-uppercase ls-1">Our Story</span>
+                        <h2 class="display-5 fw-bold mb-4">We Make Relocation Simple</h2>
+                        <p class="text-muted mb-4">RelocateX was founded with a single mission: to remove the friction
+                            from
+                            corporate mobility. We understand that moving a business isn't just about boxes—it's about
+                            people, continuity, and growth.</p>
+                        <p class="text-muted mb-4 mx-auto" style="max-width: 600px;">With a network spanning over 50
+                            countries, we combine local expertise with global standards to deliver seamless transitions
+                            for companies of all sizes.</p>
+                        <div class="d-flex justify-content-center justify-content-lg-start mt-4">
+                            <a href="contact.html" class="btn btn-primary px-5">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section (NEW) -->
+    <section class="py-5 bg-hero-2 text-white">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="p-4 border border-secondary rounded-4 h-100 text-center">
+                        <h3 class="fw-bold mb-3 text-accent">Our Mission</h3>
+                        <p class="lead opacity-75">To empower businesses to expand globally by providing high-precision,
+                            human-centered relocation solutions that eliminate downtime and maximize performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 border border-secondary rounded-4 h-100 text-center">
+                        <h3 class="fw-bold mb-3 text-accent">Our Vision</h3>
+                        <p class="lead opacity-75">To become the world's most trusted partner for corporate mobility,
+                            setting the benchmark for logistics technology and employee relocation care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence Section (NEW) -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center text-lg-start">
+                    <h2 class="display-5 fw-bold mb-4">Global Reach, Local Depth</h2>
+                    <p class="text-muted mb-4">Our operations are backed by deep local knowledge in every market we
+                        serve.
+                        From customs regulations to neighborhood insights, we have you covered.</p>
+                    <div class="row g-4">
+                        <div class="col-6 text-center text-lg-start">
+                            <h3 class="fw-bold text-primary mb-0">50+</h3>
+                            <p class="text-muted small">Countries Served</p>
+                        </div>
+                        <div class="col-6 text-center text-lg-start">
+                            <h3 class="fw-bold text-primary mb-0">200+</h3>
+                            <p class="text-muted small">Global Partners</p>
+                        </div>
+                        <div class="col-6 text-center text-lg-start">
+                            <h3 class="fw-bold text-primary mb-0">15k+</h3>
+                            <p class="text-muted small">Annual Moves</p>
+                        </div>
+                        <div class="col-6 text-center text-lg-start">
+                            <h3 class="fw-bold text-primary mb-0">99%</h3>
+                            <p class="text-muted small">SLA Adherence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="bg-light p-4 rounded-4 position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=800&q=80"
+                            alt="Global Map" class="img-fluid rounded-3">
+                        <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                            <div class="bg-primary p-3 rounded-circle shadow-lg">
+                                <i class="bi bi-geo-alt-fill fs-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships / Ecosystem Section (NEW) -->
+    <section class="py-5 bg-light">
+        <div class="container py-5 text-center">
+            <span class="text-accent fw-bold text-uppercase ls-1">The Ecosystem</span>
+            <h2 class="display-5 fw-bold mt-2 mb-5">Strategic Global Partners</h2>
+            <div class="row row-cols-2 row-cols-lg-6 g-4 align-items-center justify-content-center opacity-75">
+                <div class="col">
+                    <h5 class="fw-bold text-muted">AEROEXP</h5>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold text-muted">MARINELOG</h5>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold text-muted">VISAFAST</h5>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold text-muted">HOMESCAN</h5>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold text-muted">TECHSET</h5>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold text-muted">GLOBALINS</h5>
                 </div>
             </div>
         </div>
@@ -107,42 +219,64 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
+    <footer class="bg-light border-top py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold fs-4 text-white" href="#">
-                        Relocate<span class="text-accent">X</span>
+                <div class="col-lg-3">
+                    <a class="navbar-brand fw-bold fs-4" href="index.html">
+                        <span class="text-primary">Relocate</span><span class="text-accent">X</span>
                     </a>
                     <p class="text-muted mt-3">Your trusted partner for corporate relocation and global mobility
                         services.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Company</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="about.html" class="mode-text text-decoration-none hover-primary">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="services.html"
+                                class="mode-text text-decoration-none hover-primary">Our
+                                Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="mode-text text-decoration-none hover-primary">Latest
+                                Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="mode-text text-decoration-none hover-primary">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Services</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Support</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Moving</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Storage</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Logistics</a></li>
+                        <li class="mb-2"><a href="index.html#pricing"
+                                class="mode-text text-decoration-none hover-primary">Pricing
+                                Plans</a></li>
+                        <li class="mb-2"><a href="index.html#faq"
+                                class="mode-text text-decoration-none hover-primary">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">Newsletter</h5>
-                    <form class="d-flex gap-2">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <button class="btn btn-primary">Subscribe</button>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Newsletter</h5>
+                    <p class="text-muted small mb-3">Subscribe to get the latest corporate relocation insights.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="border-top border-secondary mt-5 pt-4 text-center text-muted">
-                <p class="mb-0">&copy; 2026 RelocateX. All rights reserved.</p>
+            <div class="border-top mt-5 pt-4 text-center text-muted">
+                <p class="mb-0 small">&copy; 2026 RelocateX. All rights reserved.</p>
             </div>
         </div>
     </footer>

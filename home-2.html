@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RelocateX - Corporate Relocation Specialists</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F172A'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='%23E27A1D' font-family='Arial, sans-serif' font-weight='bold' font-size='20'>X</text></svg>">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
@@ -15,45 +17,55 @@
 
 <body>
 
-    <!-- Header (Same as Home 1) -->
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold fs-4" href="index.html">
                 <span class="text-primary">Relocate</span><span class="text-accent">X</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 ms-auto d-lg-none">
+                <button class="btn btn-sm btn-outline-secondary rounded-circle theme-toggle" type="button">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="operations/overview.html">Hub</a></li>
                 </ul>
-                <div class="d-flex gap-2 align-items-center">
-                    <button class="btn btn-sm btn-outline-secondary rounded-circle" id="theme-toggle">
+                <div class="d-flex flex-column flex-lg-row gap-2 align-items-center mt-3 mt-lg-0" style="float: right;">
+                    <button
+                        class="btn btn-sm btn-outline-secondary desktop-only rounded-circle theme-toggle d-none d-lg-inline-flex me-lg-2"
+                        type="button">
                         <i class="bi bi-moon-stars"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
-                    <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-primary px-4 w-75 w-lg-auto nav-auth-btn">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4 w-75 w-lg-auto nav-auth-btn">Sign Up</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section (Niche) -->
-    <header class="py-5 bg-primary text-white position-relative overflow-hidden">
+    <header class="py-5 bg-hero-2 text-white position-relative overflow-hidden">
         <div class="container py-5 position-relative z-1">
             <div class="row align-items-center">
-                <div class="col-lg-7">
+                <div class="col-lg-7 text-center text-lg-start">
                     <span class="badge bg-accent mb-3">#1 Corporate Relocation Partner</span>
                     <h1 class="display-3 fw-bold mb-4">Move Your Business Without Missing a Beat</h1>
                     <p class="lead text-light opacity-75 mb-5">Comprehensive relocation logistics, employee mobility
                         solutions, and office setup services designed for enterprise efficiency.</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex flex-wrap gap-3 mb-5 mb-lg-0 justify-content-center justify-content-lg-start">
                         <div class="d-flex align-items-center gap-3">
                             <div class="fs-1 text-accent"><i class="bi bi-shield-check"></i></div>
                             <div>
@@ -72,8 +84,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="card border-0 shadow-lg p-4 bg-white text-dark">
-                        <h3 class="fw-bold mb-3">Get a Corporate Quote</h3>
+                    <div class="card border-0 shadow-lg p-4">
+                        <h3 class="fw-bold mb-3 mode-text">Get a Corporate Quote</h3>
                         <form>
                             <div class="mb-3">
                                 <label class="form-label">Company Name</label>
@@ -100,115 +112,274 @@
             </div>
         </div>
         <!-- Decorative Background Circle -->
-        <div class="position-absolute top-0 end-0 translate-middle rounded-circle bg-white opacity-10"
+        <div class="position-absolute top-0 end-0 translate-middle rounded-circle  opacity-10"
             style="width: 800px; height: 800px; filter: blur(80px);"></div>
     </header>
 
     <!-- Process Timeline -->
-    <section class="py-5">
+    <section id="process" class="py-5">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <span class="text-accent fw-bold text-uppercase ls-1">How It Works</span>
                 <h2 class="display-5 fw-bold mt-2">Our 4-Step Process</h2>
             </div>
 
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image">1</div>
-                    <div class="timeline-panel">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
                         <h4 class="fw-bold">Consultation & Planning</h4>
                         <p class="text-muted">We assess your needs, volume, and timeline to create a custom relocation
                             blueprint.</p>
                     </div>
-                </li>
-                <li>
-                    <div class="timeline-image">2</div>
-                    <div class="timeline-panel">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
                         <h4 class="fw-bold">Logistics & Coordination</h4>
                         <p class="text-muted">Our team handles all permits, packing, and transportation logistics
                             worldwide.</p>
                     </div>
-                </li>
-                <li>
-                    <div class="timeline-image">3</div>
-                    <div class="timeline-panel">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
                         <h4 class="fw-bold">Moving & Transit</h4>
                         <p class="text-muted">Real-time tracking of your assets as they move safely to the new
                             destination.</p>
                     </div>
-                </li>
-                <li>
-                    <div class="timeline-image">4</div>
-                    <div class="timeline-panel">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
                         <h4 class="fw-bold">Setup & Settlement</h4>
                         <p class="text-muted">Unpacking, IT installation, and employee orientation at your new HQ.</p>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row text-center g-4">
-                <div class="col-md-3">
-                    <h2 class="display-4 fw-bold text-primary">500+</h2>
-                    <p class="text-muted">Corporate Moves</p>
-                </div>
-                <div class="col-md-3">
-                    <h2 class="display-4 fw-bold text-primary">50+</h2>
-                    <p class="text-muted">Countries Served</p>
-                </div>
-                <div class="col-md-3">
-                    <h2 class="display-4 fw-bold text-primary">98%</h2>
-                    <p class="text-muted">On-Time Delivery</p>
-                </div>
-                <div class="col-md-3">
-                    <h2 class="display-4 fw-bold text-primary">24/7</h2>
-                    <p class="text-muted">Global Support</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Same as Home 1) -->
-    <footer class="bg-dark text-light py-5">
+    <!-- Global Network -->
+    <section id="network" class="py-5 bg-dark text-white">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-4">A Global Network of Excellence</h2>
+            <p class="lead opacity-75 mb-5 mx-auto w-75">With partners in 150+ countries, we ensure your move is handled
+                with local expertise and global standards.</p>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border border-secondary rounded">
+                        <h4 class="mb-0">Europe</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border border-secondary rounded">
+                        <h4 class="mb-0">Americas</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border border-secondary rounded">
+                        <h4 class="mb-0">Asia-Pacific</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border border-secondary rounded">
+                        <h4 class="mb-0">Middle East</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics Solutions -->
+    <section id="logistics" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h2 class="display-5 fw-bold mb-4">Precision Logistics</h2>
+                    <p class="text-muted mb-4">From sensitive IT equipment to heavy industrial machinery, our logistics
+                        team ensures every asset is inventoried, tracked, and delivered with zero damage.</p>
+                    <ul class="list-unstyled">
+                        <li
+                            class="mb-3 d-flex align-items-center gap-2 justify-content-center justify-content-lg-start">
+                            <i class="bi bi-check-circle-fill text-accent"></i>
+                            <span>Climate Controlled Transit</span>
+                        </li>
+                        <li
+                            class="mb-3 d-flex align-items-center gap-2 justify-content-center justify-content-lg-start">
+                            <i class="bi bi-check-circle-fill text-accent"></i>
+                            <span>Secure Asset Storage</span>
+                        </li>
+                        <li
+                            class="mb-3 d-flex align-items-center gap-2 justify-content-center justify-content-lg-start">
+                            <i class="bi bi-check-circle-fill text-accent"></i>
+                            <span>Real-time GPS Tracking</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-5 rounded-4 border text-center text-lg-start">
+                        <div class="fs-1 text-primary mb-3"><i class="bi bi-truck"></i></div>
+                        <h3 class="fw-bold">Enterprise Fleet</h3>
+                        <p class="text-muted">Our dedicated fleet is equipped with the latest suspension technology to
+                            protect your valuable equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobility Services -->
+    <section id="mobility" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Employee Mobility</h2>
+                <p class="text-muted mx-auto w-75">We don't just move boxes; we move people. Ensuring your team is
+                    comfortable and productive from day one.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-2 text-primary mb-3"><i class="bi bi-house-heart"></i></div>
+                        <h4 class="fw-bold">Home Finding</h4>
+                        <p class="text-muted small">Assisting employees with temporary and permanent housing solutions
+                            anywhere in the world.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-2 text-primary mb-3"><i class="bi bi-passport"></i></div>
+                        <h4 class="fw-bold">Visa & Immigration</h4>
+                        <p class="text-muted small">Expert legal support for work permits, residency, and immigration
+                            documentation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-2 text-primary mb-3"><i class="bi bi-mortarboard"></i></div>
+                        <h4 class="fw-bold">School Search</h4>
+                        <p class="text-muted small">Helping families find the best educational institutions for their
+                            children in the new city.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners -->
+    <section id="partners" class="py-5">
+        <div class="container py-5 text-center">
+            <span class="text-accent fw-bold text-uppercase ls-1">Our Ecosystem</span>
+            <h2 class="display-5 fw-bold mt-2 mb-5">Trusted by Global Leaders</h2>
+            <div class="row row-cols-1 row-cols-lg-5 g-4 opacity-50">
+                <div class="col">
+                    <h3 class="fw-bold">TECHCORP</h3>
+                </div>
+                <div class="col">
+                    <h3 class="fw-bold">GLOBALIND</h3>
+                </div>
+                <div class="col">
+                    <h3 class="fw-bold">FINSERVE</h3>
+                </div>
+                <div class="col">
+                    <h3 class="fw-bold">LOGIX</h3>
+                </div>
+                <div class="col">
+                    <h3 class="fw-bold">INNOVATE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Center -->
+    <section id="support" class="py-5 bg-primary text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4 text-center text-lg-start">Precision Moving for Modern Businesses
+                    </h1>
+                    <p class="lead mb-5 opacity-75 text-center text-lg-start">Experience the next generation of
+                        corporate mobility.
+                        Technology-driven, human-centered, and globally connected.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4">
+                        <a href="contact.html" class="btn btn-accent btn-lg px-4">Get Started</a>
+                        <a href="services.html" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="card p-4 border-0 shadow">
+                        <h4 class="fw-bold mb-3 mode-text">Live Status</h4>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="spinner-grow spinner-grow-sm text-success"></div>
+                            <span class="fw-medium">Global Operations: Online</span>
+                        </div>
+                        <p class="text-muted small mb-0">Average response time: <span class="fw-bold">Under 2
+                                minutes</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light border-top py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold fs-4 text-white" href="#">
-                        Relocate<span class="text-accent">X</span>
+                <div class="col-lg-3">
+                    <a class="navbar-brand fw-bold fs-4" href="index.html">
+                        <span class="text-primary">Relocate</span><span class="text-accent">X</span>
                     </a>
                     <p class="text-muted mt-3">Your trusted partner for corporate relocation and global mobility
                         services.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Company</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="about.html" class="mode-text text-decoration-none hover-primary">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="services.html"
+                                class="mode-text text-decoration-none hover-primary">Our
+                                Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="mode-text text-decoration-none hover-primary">Latest
+                                Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="mode-text text-decoration-none hover-primary">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Services</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Support</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Moving</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Storage</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Logistics</a></li>
+                        <li class="mb-2"><a href="index.html#pricing"
+                                class="mode-text text-decoration-none hover-primary">Pricing
+                                Plans</a></li>
+                        <li class="mb-2"><a href="index.html#faq"
+                                class="mode-text text-decoration-none hover-primary">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">Newsletter</h5>
-                    <form class="d-flex gap-2">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <button class="btn btn-primary">Subscribe</button>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Newsletter</h5>
+                    <p class="text-muted small mb-3">Subscribe to get the latest corporate relocation insights.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="border-top border-secondary mt-5 pt-4 text-center text-muted">
-                <p class="mb-0">&copy; 2026 RelocateX. All rights reserved.</p>
+            <div class="border-top mt-5 pt-4 text-center text-muted">
+                <p class="mb-0 small">&copy; 2026 RelocateX. All rights reserved.</p>
             </div>
         </div>
     </footer>

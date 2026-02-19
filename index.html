@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RelocateX - Corporate Relocation & Services</title>
-    
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F172A'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='%23E27A1D' font-family='Arial, sans-serif' font-weight='bold' font-size='20'>X</text></svg>">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -27,24 +33,34 @@
             <a class="navbar-brand fw-bold fs-4" href="index.html">
                 <span class="text-primary">Relocate</span><span class="text-accent">X</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 ms-auto d-lg-none">
+                <button class="btn btn-sm btn-outline-secondary rounded-circle theme-toggle" type="button">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="operations/overview.html">Hub</a></li>
                 </ul>
-                <div class="d-flex gap-2 align-items-center">
-                    <button class="btn btn-sm btn-outline-secondary rounded-circle" id="theme-toggle">
+                <div class="d-flex flex-column flex-lg-row gap-2 align-items-center mt-3 mt-lg-0" style="float: right">
+                    <button
+                        class="btn btn-sm btn-outline-secondary desktop-only rounded-circle theme-toggle d-none d-lg-inline-flex me-lg-2"
+                        type="button">
                         <i class="bi bi-moon-stars"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
-                    <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-primary px-4 w-75 w-lg-auto nav-auth-btn">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4 w-75 w-lg-auto nav-auth-btn">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -55,28 +71,31 @@
         <div class="container py-5">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold text-primary mb-3">Seamless Corporate Relocation Services</h1>
-                    <p class="lead text-muted mb-4">We handle the complexities of moving your business so you can focus on what matters most—your growth.</p>
-                    <div class="d-flex gap-3">
-                        <a href="contact.html" class="btn btn-primary btn-lg">Get Started</a>
-                        <a href="services.html" class="btn btn-outline-secondary btn-lg">Learn More</a>
+                    <h1 class="display-4 fw-bold text-primary mb-3 text-center text-lg-start">Seamless Corporate
+                        Relocation Services</h1>
+                    <p class="lead mode-text mb-4 text-center text-lg-start">We handle the complexities of moving your
+                        business so you can focus
+                        on what matters most—your growth.</p>
+                    <div class="d-flex gap-3 mt-4 justify-content-center justify-content-lg-start">
+                        <a href="contact.html" class="btn btn-primary btn-lg px-4">Get Started</a>
+                        <a href="services.html" class="btn btn-outline-secondary btn-lg px-4">Learn More</a>
                     </div>
-                    <div class="mt-4 d-flex align-items-center gap-4">
+                    <div class="mt-4 d-flex align-items-center gap-4 justify-content-center justify-content-lg-start">
                         <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-check-circle-fill text-accent"></i>
-                            <span class="fw-medium">Global Reach</span>
+                            <i class="bi bi-check-circle-fill text-accent fs-5"></i>
+                            <span class="fw-medium mode-text">Global Reach</span>
                         </div>
                         <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-check-circle-fill text-accent"></i>
-                            <span class="fw-medium">24/7 Support</span>
+                            <i class="bi bi-check-circle-fill text-accent fs-5"></i>
+                            <span class="fw-medium mode-text">24/7 Support</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                   <!-- Placeholder for Hero Image -->
-                   <div class="bg-white p-2 rounded-4 shadow-sm">
-                       <img src="https://placehold.co/600x400?text=Corporate+Relocation" alt="Relocation" class="img-fluid rounded-3">
-                   </div>
+                    <div class="bg-white p-2 rounded-4 shadow-sm border">
+                        <img src="https://gersonrelocation.com/wp-content/uploads/2018/02/shutterstock_75795775.jpg"
+                            alt="Relocation" class="img-fluid rounded-3">
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,28 +107,196 @@
             <div class="text-center mb-5">
                 <span class="badge bg-accent bg-opacity-10 text-accent mb-2">Our Features</span>
                 <h2 class="h1 fw-bold">Why Choose RelocateX?</h2>
-                <p class="text-muted w-75 mx-auto">We provide end-to-end solutions tailored to your specific needs.</p>
+                <p class="mode-text w-75 mx-auto">We provide end-to-end solutions tailored to your specific needs.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-1 text-primary mb-3"><i class="bi bi-globe-americas"></i></div>
+                        <h3 class="h4 fw-bold">International Moving</h3>
+                        <p class="mode-text">Expert handling of customs, logistics, and international regulations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-1 text-primary mb-3"><i class="bi bi-building-gear"></i></div>
+                        <h3 class="h4 fw-bold">Office Setup</h3>
+                        <p class="mode-text">Complete IT and furniture setup at your new location before you arrive.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-1 text-primary mb-3"><i class="bi bi-people-fill"></i></div>
+                        <h3 class="h4 fw-bold">Employee Relocation</h3>
+                        <p class="mode-text">Supporting your team with housing, visa assistance, and settling-in
+                            services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Solutions Section -->
+    <section id="solutions" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-accent bg-opacity-10 text-accent mb-2">Industry Solutions</span>
+                <h2 class="h1 fw-bold">Tailored Strategies for Every Industry</h2>
+                <p class="mode-text w-75 mx-auto">We understand that every sector has unique requirements. Our experts
+                    provide customized relocation plans for diverse business fields.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-2 text-accent mb-3"><i class="bi bi-hospital"></i></div>
+                        <h3 class="h5 fw-bold">Healthcare & Medical</h3>
+                        <p class="mode-text small">Specialized handling for sensitive medical equipment and lab
+                            relocations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-2 text-accent mb-3"><i class="bi bi-cpu"></i></div>
+                        <h3 class="h5 fw-bold">Technology & Data</h3>
+                        <p class="mode-text small">High-security server moves and IT infrastructure transition
+                            management.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="fs-2 text-accent mb-3"><i class="bi bi-bank"></i></div>
+                        <h3 class="h5 fw-bold">Financial Services</h3>
+                        <p class="mode-text small">Compliant and secure moves for banks and financial institutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-accent bg-opacity-10 text-accent mb-2">Testimonials</span>
+                <h2 class="h1 fw-bold">What Our Clients Say</h2>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm">
-                        <div class="fs-1 text-primary mb-3"><i class="bi bi-globe-americas"></i></div>
-                        <h3 class="h4 fw-bold">International Moving</h3>
-                        <p class="text-muted">Expert handling of customs, logistics, and international regulations.</p>
+                    <div class="card border-0 shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="mode-text italic fs-5 testimonial-quote">"RelocateX made our move across states
+                            completely painless.
+                            Their team was professional, fast, and handled our fragile equipment with extreme care."</p>
+                        <div class="d-flex flex-column align-items-center mt-4 testimonial-card-meta">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                style="width: 48px; height: 48px;">JS</div>
+                            <div>
+                                <h6 class="fw-bold mb-0">John Smith</h6>
+                                <small class="mode-text">CEO, TechForward</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm">
-                        <div class="fs-1 text-primary mb-3"><i class="bi bi-building-gear"></i></div>
-                        <h3 class="h4 fw-bold">Office Setup</h3>
-                        <p class="text-muted">Complete IT and furniture setup at your new location before you arrive.</p>
+                    <div class="card border-0 shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="mode-text italic fs-5 testimonial-quote">"The best relocation service we've ever used.
+                            The dashboard
+                            updates were a lifesaver for tracking our assets in real-time."</p>
+                        <div class="d-flex flex-column align-items-center mt-4 testimonial-card-meta">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                style="width: 48px; height: 48px;">AR</div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Alice Rivera</h6>
+                                <small class="mode-text">Operations Manager, Global Logistics</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm">
-                        <div class="fs-1 text-primary mb-3"><i class="bi bi-people-fill"></i></div>
-                        <h3 class="h4 fw-bold">Employee Relocation</h3>
-                        <p class="text-muted">Supporting your team with housing, visa assistance, and settling-in services.</p>
+                    <div class="card border-0 shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="mode-text italic fs-5 testimonial-quote">"Highly recommend for any corporate move.
+                            Their employee
+                            mobility support was a game changer for our new hires."</p>
+                        <div class="d-flex flex-column align-items-center mt-4 testimonial-card-meta">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                style="width: 48px; height: 48px;">ML</div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Mark Lee</h6>
+                                <small class="mode-text">HR Director, Innovate Co.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-accent bg-opacity-10 text-accent mb-2">FAQ</span>
+                <h2 class="h1 fw-bold">Frequently Asked Questions</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <div class="accordion-item border rounded-3 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-3 fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq-1">
+                                    How long does a typical office move take?
+                                </button>
+                            </h2>
+                            <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body mode-text">
+                                    A typical office move can take anywhere from a few days to several weeks, depending
+                                    on the size of the office and the distance of the move. We work with you to create a
+                                    detailed timeline to minimize downtime.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border rounded-3 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-3 fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq-2">
+                                    Do you handle international relocations?
+                                </button>
+                            </h2>
+                            <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body mode-text">
+                                    Yes, we specialize in global mobility and can handle all aspects of international
+                                    moves, including customs clearance, visas, and logistics.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border rounded-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-3 fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq-3">
+                                    What kind of insurance coverage do you provide?
+                                </button>
+                            </h2>
+                            <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body mode-text">
+                                    We offer comprehensive insurance coverage for all your items during transit.
+                                    Specific coverage details can be provided based on your shipment's value.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,41 +304,60 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
+    <footer class="bg-light border-top py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold fs-4 text-white" href="#">
-                        Relocate<span class="text-accent">X</span>
+                <div class="col-lg-3">
+                    <a class="navbar-brand fw-bold fs-4" href="index.html">
+                        <span class="text-primary">Relocate</span><span class="text-accent">X</span>
                     </a>
-                    <p class="text-muted mt-3">Your trusted partner for corporate relocation and global mobility services.</p>
+                    <p class="mode-text mt-3">Your trusted partner for corporate relocation and global mobility
+                        services.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-primary fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Company</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="about.html" class="mode-text text-decoration-none hover-primary">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="services.html"
+                                class="mode-text text-decoration-none hover-primary">Our Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="mode-text text-decoration-none hover-primary">Latest
+                                Blog</a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="mode-text text-decoration-none hover-primary">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Services</h5>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Support</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Moving</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Storage</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Logistics</a></li>
+                        <li class="mb-2"><a href="#pricing" class="mode-text text-decoration-none hover-primary">Pricing
+                                Plans</a></li>
+                        <li class="mb-2"><a href="#faq" class="mode-text text-decoration-none hover-primary">FAQ</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="mode-text text-decoration-none hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">Newsletter</h5>
-                    <form class="d-flex gap-2">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <button class="btn btn-primary">Subscribe</button>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-primary">Newsletter</h5>
+                    <p class="mode-text small mb-3">Subscribe to get the latest corporate relocation insights.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="border-top border-secondary mt-5 pt-4 text-center text-muted">
-                <p class="mb-0">&copy; 2026 RelocateX. All rights reserved.</p>
+            <div class="border-top mt-5 pt-4 text-center mode-text">
+                <p class="mb-0 small">&copy; 2026 RelocateX. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -160,4 +366,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
